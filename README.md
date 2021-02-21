@@ -1,4 +1,6 @@
-_NOTE_ This is heavily modified from the tutorial at the clone link below. Though I have made some slight edits such as adding increased functionality, Much of the code was already there, I simply expanded or tweaked it to fit my needs as a refresher on Express.
+_NOTE_ This is simply modified from the tutorial at the clone link below. Though I have made some slight edits such as adding increased functionality, Much of the code was already there, I simply expanded or tweaked it to fit my needs as a refresher on Express.
+
+I removed the XMP to JSON converter since I did not need it for my use case, slightly modified the search route and added the discover route.
 
 # Good Relay
 
