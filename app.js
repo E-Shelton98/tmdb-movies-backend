@@ -41,7 +41,7 @@ app.get('/api/tmdb/discover', async (req, res) => {
     const response = await fetch(
       `https://api.themoviedb.org/3/discover/${typeString}?sort_by=popularity.desc&api_key=${process.env.TMDB_API_KEY}`
     )
-    const data = await response.results.json()
+    const data = await response.json()
 
     return res.json({
       success: true,
