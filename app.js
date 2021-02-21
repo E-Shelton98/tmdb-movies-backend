@@ -31,7 +31,7 @@ app.use(cors())
 app.get('/', (req, res) => res.send('Hello World!'))
 
 //TMDb discover route
-app.get('/api/tmdb/discover', async (req, res) => {
+app.get('/discover', async (req, res) => {
   try {
     // This uses string interpolation to make our type query (ie. movie/tv) string.
     // It pulls the posted query param and reformats it for TMDb
@@ -56,7 +56,7 @@ app.get('/api/tmdb/discover', async (req, res) => {
 })
 
 //TMDb search route
-app.get('/api/tmdb/search', async (req, res) => {
+app.get('/search', async (req, res) => {
   try {
     // This uses string interpolation to make our search query string
     // it pulls the posted query param and reformats it for TMDb, same for type.
