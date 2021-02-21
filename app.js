@@ -84,4 +84,4 @@ app.get('/api/tmdb/search', async (req, res) => {
 })
 
 //spin up the server, console log to verify.
-app.listen(port, () => console.log(`Listening on Port ${port}!`))
+app.listen(process.env.PORT || port)
